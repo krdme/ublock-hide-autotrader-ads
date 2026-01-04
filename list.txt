@@ -1,0 +1,7 @@
+! Hide autotrader "sponsored" ads
+autotrader.co.uk##[data-testid="YOU_MAY_ALSO_LIKE"]:upward(li)
+autotrader.co.uk##[data-testid="PROMOTED_LISTING"]:upward(li)
+autotrader.co.uk##[data-testid="LEASING_LISTING"]:upward(li)
+
+! Hide autotrader "available from" ads (Cinch, Car Supermarket, etc.)
+autotrader.co.uk##[data-testid="search-listing-location"]:has(span:has-text(/^Available from.+$/)):upward(li)
